@@ -1,0 +1,19 @@
+# Tunable thresholds for mini-ids-lite
+window_seconds: 300
+
+syn_flood:
+  threshold_syns_per_src: 300
+
+portscan:
+  unique_dst_ports_per_src: 50
+
+vertical_scan:
+  unique_dst_ips_on_port: 30
+
+ssh_burst:
+  syns_to_22: 20
+
+udp_amp:
+  suspect_ports: [53, 123, 1900, 11211]
+  small_payload_len: 120
+  min_hits: 200
